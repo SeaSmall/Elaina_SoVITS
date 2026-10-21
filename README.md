@@ -83,7 +83,7 @@ Elaina_SoVITS\
 ├─ scripts\
 │   ├─ check.py              启动前自检
 │   ├─ wizard.py             配置向导
-│   ├─ setup_runtime.ps1     ★ 源码部署时补齐运行时（完整包不需要）
+│   ├─ setup_runtime.ps1     ★ 装运行时（装进项目内，不污染系统）
 │   ├─ setup_gpt_sovits.ps1  拉取 GPT-SoVITS 推理代码
 │   └─ gen_licenses.py       收集第三方许可
 ├─ docs\
