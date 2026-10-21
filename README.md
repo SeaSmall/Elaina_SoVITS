@@ -9,6 +9,27 @@
 
 ---
 
+## 怎么装
+
+仓库里**只有代码和文档**，没有运行时。因为 Python + torch 光这两样就 9.3 GB
+（其中 CUDA 库占绝大部分），不适合放进仓库或 Release。运行时用脚本现装：
+
+```powershell
+git clone https://github.com/SeaSmall/Elaina_SoVITS.git
+cd Elaina_SoVITS
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\setup_runtime.ps1
+```
+
+它会装好：Python 3.12 + py39、torch（CUDA 11.8 版）、soundcard、funasr，
+全部落在项目内的 `runtime\` 和 `envs\`，**不污染系统环境**，删项目即卸载。
+约 12 GB 下载，视网速 20 分钟到 2 小时。
+
+然后放模型（`docs/安装与配置.md` 第 4 节），双击 `启动.bat`。
+
+> 仓库不含、Release 也不含：任何模型权重、角色音色、参考音频、声纹、API Key。
+
+---
+
 ## 当前进度（先看这个）
 
 这个项目正在从零重建，**目前只有文字对话能跑通**：
