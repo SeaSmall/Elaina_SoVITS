@@ -1,0 +1,23 @@
+这个目录用来放「语音识别」模型：SenseVoice-Small。
+========================================================
+
+放进来之后应该是这样（目录里直接就是模型文件，不要多套一层）：
+
+    model\asr\
+        model.pt
+        config.yaml
+        tokens.json
+        ...
+
+从哪拿：
+    ModelScope  iic/SenseVoiceSmall
+
+为什么必须用它：
+    支持中文/英文/日文/粤语，短音频识别快，自带情绪与事件标签。
+    本项目默认信它的 fp32 版本。
+
+放好之后跑：runtime\py312\python.exe scripts\check.py
+那一行会从 [WARN] 变成 [ OK ]。
+
+⚠ 许可提醒：SenseVoice 官方要求注明出处、作者信息并保留模型名称。
+   本包随附的 licenses\THIRD_PARTY_LICENSES.md 已包含该署名。

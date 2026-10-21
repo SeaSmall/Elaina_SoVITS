@@ -1,0 +1,18 @@
+这个目录是 GPT-SoVITS 的「角色权重」位置（预留）。
+========================================================
+
+放到 gpt-sovits\weights\ 里，或者直接放到 GPT-SoVITS 认的这两个目录：
+
+    gpt-sovits\GPT_weights_v2ProPlus\      ← GPT 模型（.ckpt）
+    gpt-sovits\SoVITS_weights_v2ProPlus\   ← SoVITS 模型（.pth）
+
+需要成对使用，而且要跟 config\config.json 里的这两项对上：
+
+    "tts.ref_audio"   参考音频路径（5~10 秒 .wav）
+    "tts.prompt_text" 参考音频里说的那段话，逐字一致
+
+⚠ 本包**故意不包含**任何角色音色权重和参考音频。
+   原因：GPT-SoVITS 这个项目本身是 MIT 许可，但那只覆盖**代码**；
+   用某个角色形象 / 某位声优的声音训练出来的权重，能不能再分发给别人，
+   不属于开源许可的授权范围，需要你自己确认是否有权分发。
+   本项目只提供能力，不代替你判断。

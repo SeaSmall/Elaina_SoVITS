@@ -1,0 +1,33 @@
+VB-Audio 虚拟声卡 —— 来源与授权声明
+================================================================
+
+本软件随包分发以下 VB-Audio 软件（安装包位于 vendor\ 目录）：
+
+  * Voicemeeter（Banana / 标准版）
+      来源: https://www.voicemeeter.com
+  * VB-CABLE Virtual Audio Device
+      来源: https://www.vb-cable.com
+
+上述软件均为 VB-Audio 的 **donationware**（捐赠软件）。它们可以免费使用，
+但作者依靠用户捐赠来维持开发。如果你觉得它们有用，请通过官方渠道捐赠：
+
+      https://vb-audio.com/Services/licensing.htm
+
+依据 VB-Audio 官方的分发条款：
+  * Voicemeeter 的 Distribution Rules [1] 允许把 Voicemeeter（或 Banana）
+    按原样分发给最终用户，前提是 donationware 模式仍然适用；
+    分发时必须注明上述来源地址，并说明它是 donationware。
+  * VB-CABLE 的 "Distribution with other product" 条款允许把 VB-CABLE
+    与你的应用程序一同分发（无论免费或商业），甚至允许嵌入安装包做静默安装，
+    同样要求注明来源地址并说明 donationware 性质。
+
+如果你打算把本软件用于公司或机构内部、且最终用户无法向 VB-Audio 付费，
+请按 VB-Audio 官网说明按人数购买授权，或联系他们获取正式再许可。
+
+  * **Voicemeeter Potato 不在可自由分发的范围内** —— 官方明确要求
+    在 webshop 购买授权。本包**不包含** Potato。
+
+  * **VB-CABLE A+B / C+D** 同样需要在 webshop 购买，本包**不包含**。
+
+本软件与 VB-Audio 无任何隶属或背书关系。VB-Audio、Voicemeeter、VB-CABLE
+是其各自权利人的商标。

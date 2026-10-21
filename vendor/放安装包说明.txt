@@ -1,0 +1,23 @@
+这个目录放虚拟声卡安装包。
+========================================================
+
+需要两个（都是 VB-Audio 的 donationware）：
+
+  1. Voicemeeter Banana（或标准版）
+     https://vb-audio.com/Voicemeeter/banana.htm
+     文件名类似 VoicemeeterProSetup.exe / VoicemeeterSetup.exe
+
+  2. VB-CABLE Virtual Audio Device
+     https://vb-audio.com/Cable/
+     文件名 VBCABLE_Setup_x64.exe（还需要 VBCABLE_ControlPanel.exe）
+
+⚠ 不要放 Voicemeeter **Potato** —— 官方明确要求它在 webshop 购买授权，
+   不在可自由分发的范围内。
+
+⚠ 不要放 VB-CABLE A+B / C+D —— 同样需要购买。
+
+分发声明见 licenses\VB-AUDIO-NOTICE.txt：
+   必须写明来源（www.voicemeeter.com / www.vb-cable.com）
+   并说明它们是 donationware。
+
+放好之后，启动.bat 会检测到并提示安装。

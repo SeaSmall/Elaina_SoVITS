@@ -1,0 +1,61 @@
+{
+  "_说明": "这是公开模板，随包分发。第一次运行会把这里复制成 config.json 再让向导补 key。",
+  "version": 1,
+  "mode": "local",
+  "lang": "zh",
+  "persona": {
+    "name": "Elaina",
+    "system_prompt": "你是一个住在用户电脑里的 AI 伙伴，说话自然、口语化，像真人聊天。\n规则：\n1. 用中文（或用户当前使用的语言）口语回答，不要用书面语长句。\n2. 一般一到三句话就够，除非用户明确要求详细解释。\n3. 不知道就说不知道，不要编。\n4. 不要输出 markdown、列表符号、括号注释，输出的是会被念出来的话。"
+  },
+  "llm": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key": "",
+    "model": "deepseek-chat",
+    "temperature": 0.8,
+    "max_tokens": 800,
+    "timeout": 60
+  },
+  "translation": {
+    "enabled": false,
+    "use_main_llm": true,
+    "provider": "",
+    "base_url": "",
+    "api_key": "",
+    "model": "",
+    "target_lang": "ja"
+  },
+  "vision": {
+    "mode": "off",
+    "gate": "auto",
+    "provider": "mimo",
+    "base_url": "https://token-plan-cn.xiaomimimo.com/v1",
+    "api_key": "",
+    "model": "mimo-v2.6-pro",
+    "reasoning_effort": "none",
+    "max_width": 1920,
+    "max_tokens": 4000
+  },
+  "asr": {
+    "mode": "local",
+    "url": "http://127.0.0.1:9881",
+    "lang": "auto"
+  },
+  "tts": {
+    "enabled": true,
+    "url": "http://127.0.0.1:9880",
+    "ref_audio": "",
+    "prompt_text": "",
+    "prompt_lang": "zh",
+    "text_lang": "zh"
+  },
+  "voiceprint": {
+    "enabled": false,
+    "threshold": 0.35
+  },
+  "audio": {
+    "input": "",
+    "output": ""
+  },
+  "history_turns": 20
+}

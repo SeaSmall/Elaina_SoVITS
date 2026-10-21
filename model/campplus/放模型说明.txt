@@ -1,0 +1,25 @@
+这个目录用来放「声纹识别」模型：CAM++。
+========================================================
+
+放进来之后应该是这样：
+
+    model\campplus\
+        campplus_cn_common.bin      （或 model.pt / *.onnx，看你的来源）
+        config.yaml
+        ...
+
+从哪拿：
+    ModelScope  iic/speech_campplus_sv_zh-cn_16k-common
+
+作用：
+    说话人验证。判断"现在说话的是不是主人"，输出 192 维特征向量。
+    不录声纹也能用（config 里 voiceprint.enabled = false）。
+
+用法：
+    1. 把模型放到本目录
+    2. 运行 录声纹.bat 录几段自己的声音
+    3. config\config.json 里把 voiceprint.enabled 改成 true
+       （录声纹时脚本会自动标定阈值写到 data\voiceprint\vpcfg.json）
+
+⚠ 本包不含任何人的声纹文件。data\voiceprint\ 默认是空的，
+   声纹属于生物特征，不要随包分发。

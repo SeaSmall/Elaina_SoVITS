@@ -1,0 +1,41 @@
+# 运行时与模型 —— 不进仓库
+runtime/
+envs/
+model/*/*
+!model/*/放模型说明.txt
+gpt-sovits/api/
+gpt-sovits/GPT_weights*/
+gpt-sovits/SoVITS_weights*/
+gpt-sovits/weights/*
+!gpt-sovits/weights/放权重说明.txt
+vendor/*.exe
+
+# 个人数据 / 隐私
+config/config.json
+config/ready.json
+data/
+logs/*
+!logs/.gitkeep
+*.npy
+.voiceprint.*
+.vpcfg.json
+
+# 系统垃圾
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 打包产物
+*.zip
+*.7z
+*.tar.gz
+dist/
+build/

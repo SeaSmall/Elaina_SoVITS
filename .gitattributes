@@ -1,0 +1,20 @@
+# 默认按文本处理，但下面这些必须钉死行尾，否则 Windows 上会坏
+* text=auto
+
+# .bat 必须是 CRLF，否则 cmd 解析会出问题
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 这些二进制别让 git 做任何转换
+*.exe binary
+*.dll binary
+*.pth binary
+*.ckpt binary
+*.gguf binary
+*.safetensors binary
+*.npy binary
+*.wav binary
+*.png binary
+*.jpg binary
+*.jpeg binary

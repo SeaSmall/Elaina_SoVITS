@@ -1,0 +1,26 @@
+这个目录用来放「识图判断」模型：Laya（微调版）。
+========================================================
+
+作用：
+    每一句话都先问它一次「用户这句话需不需要看屏幕」。
+    它是一个非自回归的小模型，单次前向约 30~120 ms，只输出一个概率，
+    不生成任何文本。比让大模型自己判断快得多、也便宜得多。
+
+放进来之后应该是这样：
+
+    model\laya\
+        config.json
+        model.safetensors          （或 pytorch_model.bin）
+        tokenizer.json
+        ...
+
+为什么本目录默认是空的：
+    这个模型是 convaiinnovations/laya-multilingual（Apache-2.0）的**微调派生版**，
+    不是官方原版。派生版的再分发需要跟着声明"这是修改版"，
+    见 licenses\MODIFICATIONS.md。
+
+    基座（laya-multilingual，约 647 MB）可以用来自己重新训练。
+
+不想要自动判断也可以：
+    config\config.json 里把 vision.gate 改成 always（每次都看）
+    或 never（从不看）。这样就不需要这个模型。
